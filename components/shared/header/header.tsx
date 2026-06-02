@@ -13,7 +13,7 @@ const header = () => {
                 <div className="">{navigation()}</div>
                 <div>{modeToggler()}</div>
             </div>
-            <div>{hero()}</div>
+            <div className="flex flex-col justify-center">{hero()}</div>
         </section>
     );
 };
