@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800">
+  <defs>
+    <radialGradient id="glow1" cx="20%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#0D2240" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1A1A2E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="55%" r="45%">
+      <stop offset="0%"   stop-color="#1A3A5C" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1A1A2E" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="gridFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="white" stop-opacity="0.06"/>
+      <stop offset="55%"  stop-color="white" stop-opacity="0.025"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gridMask">
+      <rect width="1440" height="800" fill="url(#gridFade)"/>
+    </mask>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4A9EDA" stop-opacity="0"/>
+      <stop offset="35%"  stop-color="#4A9EDA" stop-opacity="0.35"/>
+      <stop offset="65%"  stop-color="#2E5F8A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#4A9EDA" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="bottomFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="65%"  stop-color="#1A1A2E" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1A1A2E" stop-opacity="1"/>
+    </linearGradient>
+
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.9" fill="#4A9EDA" opacity="0.2"/>
+    </pattern>
+    <linearGradient id="dotsFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="white" stop-opacity="0.9"/>
+      <stop offset="60%"  stop-color="white" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="dotsMask">
+      <rect width="1440" height="800" fill="url(#dotsFade)"/>
+    </mask>
+  </defs>
+
+  <!-- بکگراند -->
+  <rect width="1440" height="800" fill="#1A1A2E"/>
+
+  <!-- گلو -->
+  <rect width="1440" height="800" fill="url(#glow1)"/>
+  <rect width="1440" height="800" fill="url(#glow2)"/>
+
+  <!-- گرید -->
+  <g mask="url(#gridMask)">
+    <line x1="0" y1="160" x2="1440" y2="160" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="0" y1="320" x2="1440" y2="320" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="0" y1="480" x2="1440" y2="480" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="0" y1="640" x2="1440" y2="640" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="240"  y1="0" x2="240"  y2="800" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="480"  y1="0" x2="480"  y2="800" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="720"  y1="0" x2="720"  y2="800" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="960"  y1="0" x2="960"  y2="800" stroke="#8FA3B8" stroke-width="0.5"/>
+    <line x1="1200" y1="0" x2="1200" y2="800" stroke="#8FA3B8" stroke-width="0.5"/>
+  </g>
+
+  <!-- دات پترن -->
+  <rect width="1440" height="800" fill="url(#dots)" mask="url(#dotsMask)"/>
+
+  <!-- اشکال هندسی — گوشه چپ بالا -->
+  <polygon points="60,40 130,40 165,95 130,150 60,150 25,95"
+           fill="none" stroke="#1A3A5C" stroke-width="1" opacity="0.6"/>
+  <polygon points="80,68 110,68 125,95 110,122 80,122 65,95"
+           fill="none" stroke="#2E5F8A" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- اشکال هندسی — گوشه راست پایین -->
+  <polygon points="1310,650 1380,650 1415,705 1380,760 1310,760 1275,705"
+           fill="none" stroke="#1A3A5C" stroke-width="1" opacity="0.5"/>
+  <rect x="1330" y="672" width="60" height="60"
+        fill="none" stroke="#2E5F8A" stroke-width="0.8" opacity="0.3"
+        transform="rotate(15 1360 702)"/>
+
+  <!-- مثلث ظریف گوشه راست بالا -->
+  <polygon points="1340,30 1420,30 1420,110"
+           fill="none" stroke="#1A3A5C" stroke-width="1" opacity="0.4"/>
+  <polygon points="1360,50 1410,50 1410,100"
+           fill="none" stroke="#2E5F8A" stroke-width="0.7" opacity="0.25"/>
+
+  <!-- لوزی وسط چپ -->
+  <polygon points="90,380 130,340 170,380 130,420"
+           fill="none" stroke="#2E5F8A" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- خط درخشان -->
+  <rect x="0" y="399" width="1440" height="1.5" fill="url(#lineGrad)"/>
+
+  <!-- فید پایین -->
+  <rect width="1440" height="800" fill="url(#bottomFade)"/>
+</svg>
