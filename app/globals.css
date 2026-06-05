@@ -57,6 +57,7 @@
     --muted-foreground: 210 19% 64%; /* #8FA3B8 — Mist */
     --accent: 210 62% 23%; /* #1A3A5C — Steel Blue */
     --accent-foreground: 214 38% 93%;
+    --accent-light: 210 52% 36%; /* #2E5F8A — Ocean */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 214 38% 93%;
     --border: 231 12% 33%; /* #52525E — Ash */

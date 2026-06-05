@@ -1,0 +1,60 @@
+<svg width="1442" height="793" viewBox="0 0 1442 793" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Vertical gradient: bright blue top → dark blue bottom -->
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="793" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4A9EDA" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1A3A5C" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- Radial fade mask -->
+    <radialGradient id="maskGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="white" stop-opacity="1"/>
+      <stop offset="65%" stop-color="white" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="fadeMask">
+      <rect width="1442" height="793" fill="url(#maskGrad)"/>
+    </mask>
+
+    <!-- Dot pattern 40px -->
+    <pattern id="dotPat" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.4" fill="url(#lineGrad)"/>
+    </pattern>
+
+    <!-- Grid lines pattern 120x120 -->
+    <pattern id="gridPat" width="120" height="120" patternUnits="userSpaceOnUse">
+      <!-- horizontal line -->
+      <line x1="0" y1="0" x2="120" y2="0" stroke="url(#lineGrad)" stroke-width="0.5" stroke-opacity="0.4"/>
+      <!-- vertical line -->
+      <line x1="0" y1="0" x2="0" y2="120" stroke="url(#lineGrad)" stroke-width="0.5" stroke-opacity="0.4"/>
+    </pattern>
+
+    <!-- Corner bracket pattern 120x120 -->
+    <pattern id="cornerPat" width="120" height="120" patternUnits="userSpaceOnUse">
+      <!-- top-left corner -->
+      <path d="M8 20 L8 8 L20 8" stroke="#4A9EDA" stroke-width="1.2" stroke-opacity="0.45" fill="none" stroke-linecap="square"/>
+      <!-- bottom-right corner -->
+      <path d="M112 100 L112 112 L100 112" stroke="#4A9EDA" stroke-width="1.2" stroke-opacity="0.45" fill="none" stroke-linecap="square"/>
+    </pattern>
+
+    <!-- Accent cross at intersections -->
+    <pattern id="crossPat" width="120" height="120" patternUnits="userSpaceOnUse">
+      <line x1="57" y1="60" x2="63" y2="60" stroke="#4A9EDA" stroke-width="1" stroke-opacity="0.3"/>
+      <line x1="60" y1="57" x2="60" y2="63" stroke="#4A9EDA" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- tiny dot at center -->
+      <circle cx="60" cy="60" r="1.8" fill="#4A9EDA" fill-opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Layer 1: fine dot grid -->
+  <rect width="1442" height="793" fill="url(#dotPat)" mask="url(#fadeMask)" opacity="0.85"/>
+
+  <!-- Layer 2: grid lines -->
+  <rect width="1442" height="793" fill="url(#gridPat)" mask="url(#fadeMask)" opacity="1"/>
+
+  <!-- Layer 3: corner brackets -->
+  <rect width="1442" height="793" fill="url(#cornerPat)" mask="url(#fadeMask)" opacity="1"/>
+
+  <!-- Layer 4: cross + accent dot at each grid intersection -->
+  <rect width="1442" height="793" fill="url(#crossPat)" mask="url(#fadeMask)" opacity="1"/>
+</svg>
