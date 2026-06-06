@@ -10,7 +10,7 @@ const navButtons = [
     {
         id: "2",
         name: "About me",
-        address: "",
+        address: "/aboutme",
     },
     {
         id: "3",
@@ -21,13 +21,13 @@ const navButtons = [
 
 const navigation = () => {
     return (
-        <div className=" justify-between flex flex-row">
+        <div className="flex gap-6">
             {navButtons.map((navbutton) => (
                 <Button
                     asChild
                     variant="ghost"
                     key={navbutton.id}
-                    className="mx-3.5 text-muted-foreground">
+                    className="text-muted-foreground">
                     <Link href={navbutton.address}>{navbutton.name}</Link>
                 </Button>
             ))}

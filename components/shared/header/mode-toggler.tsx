@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const modeToggler = () => {
     return (
-        <>
+        <div className="flex text-muted-foreground flex-1 justify-end">
             <Link href="">
                 <Sun></Sun>
             </Link>
-        </>
+        </div>
     );
 };
 

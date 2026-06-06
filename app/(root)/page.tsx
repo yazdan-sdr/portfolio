@@ -1,7 +1,6 @@
-import header from "@/components/shared/header/header";
-import footer from "@/components/shared/footer/footer";
-import skillsSection from "@/components/skills-section/page";
-import careerOverview from "@/components/career-overview/page";
+import SkillsSection from "@/components/skills-section/page";
+import CareerOverview from "@/components/career-overview/page";
+import Hero from "@/components/shared/header/hero";
 export const metadata = {
     title: "Home",
 };
@@ -9,10 +8,9 @@ export const metadata = {
 const Homepage = () => {
     return (
         <section className="flex flex-col items-center justify-center w-full">
-            <div>{header()}</div>
-            <div>{skillsSection()}</div>
-            <div>{careerOverview()}</div>
-            <div>{footer()}</div>
+            <Hero />
+            <SkillsSection />
+            <CareerOverview />
         </section>
     );
 };
