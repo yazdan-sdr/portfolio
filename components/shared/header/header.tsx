@@ -8,12 +8,12 @@ import hero from "./hero";
 const header = () => {
     return (
         <section className="w-full flex flex-col items-center">
-            <div className="w-screen flex flex-row flex-start justify-evenly mb-6">
+            <div className="w-full flex flex-row flex-start justify-evenly mb-5 mr-5">
                 <div>{logo()}</div>
                 <div className="">{navigation()}</div>
-                <div>{modeToggler()}</div>
+                <div className="">{modeToggler()}</div>
             </div>
-            <div className="flex flex-col justify-center">{hero()}</div>
+            <div className="flex flex-col justify-center w-full">{hero()}</div>
         </section>
     );
 };

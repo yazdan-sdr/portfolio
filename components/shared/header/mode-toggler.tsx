@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const modeToggler = () => {
     return (
-        <div>
+        <>
             <Link href="">
                 <Sun></Sun>
             </Link>
-        </div>
+        </>
     );
 };
 

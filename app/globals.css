@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/*
+* {
+    outline: 1px solid red !important;
+}
+*/
 :root {
     --background: 214 38% 96%; /* #EEF2F8 — روشن‌ترین لایه */
     --foreground: 231 27% 12%; /* #1A1A2E — Midnight */
@@ -42,32 +47,35 @@
 --ring: 222.2 84% 4.9%;
 --radius: 0.5rem;
 */
+
 .dark {
-    --background: 231 27% 12%; /* #1A1A2E — Midnight */
-    --foreground: 214 38% 93%; /* #E8EDF5 — Frost White */
-    --card: 231 18% 19%; /* #2D2D3D — Charcoal */
-    --card-foreground: 214 38% 93%; /* #E8EDF5 */
-    --popover: 231 18% 19%; /* #2D2D3D */
-    --popover-foreground: 214 38% 93%; /* #E8EDF5 */
-    --primary: 207 66% 58%; /* #4A9EDA — Sky Accent */
-    --primary-foreground: 231 27% 12%; /* #1A1A2E */
-    --secondary: 231 14% 27%; /* #3E3E50 — Graphite */
+    --background: 212 47% 10%; /* #0A1628 — Navy Deep */
+    --foreground: 214 38% 93%; /* #E8EDF5 */
+    --card: 213 56% 16%; /* #0D2240 — Sapphire */
+    --card-foreground: 214 38% 93%;
+    --popover: 213 56% 16%; /* #0D2240 */
+    --popover-foreground: 214 38% 93%;
+    --primary: 207 66% 58%; /* #4A9EDA */
+    --primary-foreground: 212 47% 10%;
+    --secondary: 213 56% 16%; /* #0D2240 */
     --secondary-foreground: 214 38% 93%;
-    --muted: 231 14% 27%; /* #3E3E50 */
-    --muted-foreground: 210 19% 64%; /* #8FA3B8 — Mist */
-    --accent: 210 62% 23%; /* #1A3A5C — Steel Blue */
+    --muted: 213 56% 16%; /* #0D2240 */
+    --muted-foreground: 210 19% 64%; /* #8FA3B8 */
+    --accent: 210 62% 23%; /* #1A3A5C */
     --accent-foreground: 214 38% 93%;
-    --accent-light: 210 52% 36%; /* #2E5F8A — Ocean */
+    --accent-light: 210 52% 36%; /* #2E5F8A */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 214 38% 93%;
-    --border: 231 12% 33%; /* #52525E — Ash */
-    --input: 231 18% 19%; /* #2D2D3D */
+    --border: 213 56% 16%; /* #0D2240 */
+    --input: 213 56% 16%; /* #0D2240 */
     --ring: 207 66% 58%; /* #4A9EDA */
 }
 
 @theme {
     --color-background: hsl(var(--background));
     --color-foreground: hsl(var(--foreground));
+    --color-card: hsl(var(--card));
+    --color-card-foreground: hsl(var(--card-foreground));
     --color-primary: hsl(var(--primary));
     --color-primary-foreground: hsl(var(--primary-foreground));
     --color-secondary: hsl(var(--secondary));
@@ -76,12 +84,13 @@
     --color-muted-foreground: hsl(var(--muted-foreground));
     --color-accent: hsl(var(--accent));
     --color-accent-foreground: hsl(var(--accent-foreground));
+    --color-accent-light: hsl(var(--accent-light));
     --color-destructive: hsl(var(--destructive));
     --color-destructive-foreground: hsl(var(--destructive-foreground));
     --color-border: hsl(var(--border));
     --color-input: hsl(var(--input));
     --color-ring: hsl(var(--ring));
-
+    --radius: 0.5rem;
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);

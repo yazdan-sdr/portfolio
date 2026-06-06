@@ -55,17 +55,22 @@ const skills = [
 
 const skillsSection = () => {
     return (
-        <div className="flex w-screen flex-row justify-evenly mt-30">
-            {skills.map((skill) => (
-                <span className={skill.name} key={skill.id}>
-                    <Image
-                        src={skill.icon}
-                        alt={skill.name}
-                        width={48}
-                        height={48}
-                    />
-                </span>
-            ))}
+        <div className="flex flex-col justify-center items-center w-full mt-20 max-w-7xl mx-auto">
+            <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl mb-15">
+                Skills & Technologies
+            </h2>
+            <div className="flex flex-col lg:flex-row justify-evenly">
+                {skills.map((skill) => (
+                    <span className="{skill.name} m-7" key={skill.id}>
+                        <Image
+                            src={skill.icon}
+                            alt={skill.name}
+                            width={48}
+                            height={48}
+                        />
+                    </span>
+                ))}
+            </div>
         </div>
     );
 };
