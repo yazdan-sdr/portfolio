@@ -6,12 +6,22 @@ const description = () => {
             className={clsx([
                 "flex",
                 "flex-col",
-                "lg:gap-x-20",
-                "justify-center",
-                "items-center",
                 "gap-y-20",
+                "lg:flex-row",
+                "lg:px-20",
+                "justify-evenly",
+                "items-center",
+                "min-h-screen",
             ])}>
-            <div className="w-full">
+            <div
+                className={clsx(
+                    "lg:w-1/2",
+                    "flex",
+                    "justify-center",
+                    "lg:shrink-0",
+                    "lg:justify-start",
+                    "w-full",
+                )}>
                 <Image
                     src="/images/tony.jpg"
                     width={300}
@@ -19,10 +29,26 @@ const description = () => {
                     priority={true}
                     alt="picture"
                     title="picture"
-                    className="w-full max-w-sm h-auto object-cover rounded-4xl"
+                    className={clsx(
+                        "w-full",
+                        "max-w-fit",
+                        "object-cover",
+                        "rounded-4xl",
+                    )}
                 />
             </div>
-            <div>
+            <div className="px-20 lg:px-0">
+                <h2
+                    className={clsx(
+                        "font-bold",
+                        "text-accent-light",
+                        "text-2xl",
+                        "md:text-4xl",
+                        "lg:text-5xl",
+                        "mb-10",
+                    )}>
+                    About ME
+                </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
                     accusamus laborum dolores culpa aspernatur omnis voluptatem

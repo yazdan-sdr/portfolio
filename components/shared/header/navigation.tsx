@@ -1,33 +1,42 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const navButtons = [
+export const navButtons = [
     {
         id: "1",
-        name: "Projects",
-        address: "",
+        name: "HOME",
+        address: "/",
+        onLarge: "lg:hidden",
     },
     {
         id: "2",
-        name: "About me",
-        address: "/aboutme",
+        name: "Projects",
+        address: "/projects",
+        onLarge: "",
     },
     {
         id: "3",
+        name: "About me",
+        address: "/aboutme",
+        onLarge: "",
+    },
+    {
+        id: "4",
         name: "Contact",
-        address: "",
+        address: "/contact",
+        onLarge: "",
     },
 ];
 
 const navigation = () => {
     return (
-        <div className="flex gap-6">
+        <div className="lg:flex gap-6 hidden">
             {navButtons.map((navbutton) => (
                 <Button
                     asChild
                     variant="ghost"
                     key={navbutton.id}
-                    className="text-muted-foreground">
+                    className={`text-muted-foreground ${navbutton.onLarge}  p-5 text-xl`}>
                     <Link href={navbutton.address}>{navbutton.name}</Link>
                 </Button>
             ))}

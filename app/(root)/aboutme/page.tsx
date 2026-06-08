@@ -1,8 +1,17 @@
 import Description from "@/components/aboutme/descriptopn";
 import TechStack from "@/components/aboutme/tech-stack";
+import clsx from "clsx";
+
 const aboutMe = () => {
     return (
-        <section className="flex flex-col min-h-screen w-full">
+        <section
+            className={clsx(
+                "mt-10",
+                "flex",
+                "flex-col",
+                "min-h-screen",
+                "w-full",
+            )}>
             <Description />
             <TechStack />
         </section>

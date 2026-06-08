@@ -6,8 +6,9 @@ const footer = () => {
     return (
         <footer
             className={clsx([
+                "bg-linear-to-b",
                 "from-background",
-                "to-accent",
+                "to-card",
                 "bg-accent",
                 "mt-50",
                 "flex",
@@ -15,7 +16,6 @@ const footer = () => {
                 "flex-col",
                 "items-center",
                 "justify-center",
-                "bg-linear-to-b",
             ])}>
             <div className="mt-20 mb-10 flex w-full items-center justify-center">
                 <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
@@ -30,7 +30,9 @@ const footer = () => {
                     {"\u00a9"}
                     {thisYear}.{"\u00a0"}
                     Developed by{" "}
-                    <span className="text-primary font-bold">YAZDAN SADRI</span>
+                    <span className="text-accent-light font-bold">
+                        YAZDAN SADRI
+                    </span>
                 </p>
             </div>
         </footer>

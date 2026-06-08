@@ -1,17 +1,17 @@
 "Use client";
-
 import { Sun } from "lucide-react";
 import Link from "next/link";
+
 //import Image from "next/image";
 
-const modeToggler = () => {
+const ModeToggler = () => {
     return (
-        <div className="flex text-muted-foreground flex-1 justify-end">
+        <div>
             <Link href="">
-                <Sun></Sun>
+                <Sun className="text-muted-foreground" size={35}></Sun>
             </Link>
         </div>
     );
 };
 
-export default modeToggler;
+export default ModeToggler;

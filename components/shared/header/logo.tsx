@@ -1,17 +1,18 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const logo = () => {
     return (
-        <div className="flex-1">
+        <div className="flex md:flex-1 justify-start">
             <Link className="flex items-center" href="/">
-                <Image
+                {/*<Image
                     src="/images/mainLogo(temp).svg"
                     alt="main logo"
                     width={48}
                     height={48}
-                />
-                <p className="font-bold text-muted-foreground"> YAZDAN</p>
+                />*/}
+                <p className="font-bold px-2.5 rounded-full text-5xl text-[#2E5F8A] bg-[#2E5F8A]">
+                    Y
+                </p>
             </Link>
         </div>
     );
