@@ -26,7 +26,7 @@ const socials = [
         id: "4",
         name: "Gmail",
         icon: Gmail,
-        address: "yazdansdr@gmail.com",
+        address: "https://youtube.com/",
     },
 ];
 
