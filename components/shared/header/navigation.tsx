@@ -36,7 +36,7 @@ const navigation = () => {
                     asChild
                     variant="ghost"
                     key={navbutton.id}
-                    className={`text-muted-foreground ${navbutton.onLarge}  p-5 text-xl`}>
+                    className={`${navbutton.onLarge}  p-5 text-lg`}>
                     <Link href={navbutton.address}>{navbutton.name}</Link>
                 </Button>
             ))}

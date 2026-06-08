@@ -1,21 +1,23 @@
 import Link from "next/link";
+import Image from "next/image";
 
-const logo = () => {
+export const LogoName = () => (
+    <p className="font-bold pb-1 text-xl text-primary">YAZDAN</p>
+);
+
+const Logo = () => {
     return (
-        <div className="flex md:flex-1 justify-start">
+        <div className="flex justify-center items-center w-15">
             <Link className="flex items-center" href="/">
-                {/*<Image
-                    src="/images/mainLogo(temp).svg"
+                <Image
+                    src="/images/logopng2.png"
                     alt="main logo"
-                    width={48}
-                    height={48}
-                />*/}
-                <p className="font-bold px-2.5 rounded-full text-5xl text-[#2E5F8A] bg-[#2E5F8A]">
-                    Y
-                </p>
+                    width={60}
+                    height={60}
+                />
             </Link>
         </div>
     );
 };
 
-export default logo;
+export default Logo;

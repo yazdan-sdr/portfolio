@@ -6,12 +6,16 @@ import Marquee from "react-fast-marquee";
 const skillsSection = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full mt-20 max-w-7xl mx-auto">
-            <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl mb-25">
+            <h2 className="font-bold text-primary text-3xl sm:text-4xl lg:text-5xl mb-25">
                 Skills & Technologies
             </h2>
 
             <div className="overflow-hidden w-full px-10">
-                <Marquee speed={60} gradient={false} pauseOnHover>
+                <Marquee
+                    speed={60}
+                    gradient
+                    gradientColor="var(--background)"
+                    pauseOnHover>
                     {skills.map((skill) => (
                         <span
                             className={clsx(

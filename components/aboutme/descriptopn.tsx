@@ -11,7 +11,7 @@ const description = () => {
                 "lg:px-20",
                 "justify-evenly",
                 "items-center",
-                "min-h-screen",
+                "my-10",
             ])}>
             <div
                 className={clsx(
@@ -23,7 +23,7 @@ const description = () => {
                     "w-full",
                 )}>
                 <Image
-                    src="/images/tony.jpg"
+                    src="/images/tony-s.jpg"
                     width={300}
                     height={400}
                     priority={true}
@@ -41,7 +41,7 @@ const description = () => {
                 <h2
                     className={clsx(
                         "font-bold",
-                        "text-accent-light",
+                        "text-primary",
                         "text-2xl",
                         "md:text-4xl",
                         "lg:text-5xl",

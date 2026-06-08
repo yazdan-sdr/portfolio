@@ -5,7 +5,6 @@ const hero = () => {
         <div className="flex flex-col justify-center w-full">
             <div
                 className={clsx(
-                    "bg-[url('/images/hero-dots.svg')]",
                     "relative",
                     "w-full",
                     "min-h-screen",
@@ -18,7 +17,7 @@ const hero = () => {
                     className={clsx(
                         "my-10",
                         "font-bold",
-                        "text-2xl",
+                        "text-3xl",
                         "md:text-4xl",
                         "lg:text-5xl",
                         "flex",
@@ -29,23 +28,22 @@ const hero = () => {
                     <span
                         className={clsx(
                             "bg-linear-to-r",
-                            "from-muted-foreground",
-                            "to-primary",
+                            "from-primary",
+                            "to-accent",
                             "bg-clip-text",
                             "text-transparent",
                         )}>
                         Front-End
                     </span>
-                    <span className="text-muted-foreground">
-                        {"\u00a0"}Developer
-                    </span>
+                    <span className="text-primary">{"\u00a0"}Developer</span>
                 </h1>
                 <p
                     className={clsx(
                         "flex",
                         "text-center",
                         "justify-center",
-                        "mx-40",
+                        "mx-10",
+                        "text-foreground",
                     )}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Neque ipsa pariatur, cum velit eligendi, veritatis assumenda

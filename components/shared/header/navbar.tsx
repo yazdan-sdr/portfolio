@@ -3,29 +3,36 @@ import Logo from "./logo";
 import ModeToggler from "./mode-toggler";
 import MobileMenu from "./mobile-menu";
 import clsx from "clsx";
+import { LogoName } from "./logo";
 
 const navBar = () => {
     return (
         <header
             className={clsx(
-                "bg-linear-to-t",
-                "from-background",
-                "to-card",
+                "top-0",
+                "z-50",
+                "sticky",
+                "bg-linear-to-b",
+                "from-chart-1",
+                "to-background",
                 "flex",
-                "lg:px-50",
+                "lg:px-30",
                 "px-20",
                 "py-7.5",
                 "flex-row",
                 "relative",
-                "justify-evenly",
                 "items-center",
-                "bg-card",
             )}>
-            <Logo />
-            <Navigation />
-            <div className="flex gap-6 text-muted-foreground flex-1 justify-end">
+            <div className="flex flex-1 justify-start items-center gap-4">
+                <Logo />
+                <LogoName />
+            </div>
+            <div className="flex flex-1 justify-center">
+                <Navigation />
+            </div>
+            <div className="flex flex-1 gap-6 justify-end items-center">
                 <MobileMenu />
-                <div className="lg:flex hidden">
+                <div className="lg:flex hidden mb-3.5">
                     <ModeToggler />
                 </div>
             </div>

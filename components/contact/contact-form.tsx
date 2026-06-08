@@ -2,6 +2,7 @@
 import * as z from "zod";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+
 {
     /* shad comps*/
 }
@@ -66,12 +67,9 @@ export function ContactForm() {
         form.reset();
     }
     return (
-        <Card className="w-full max-w-lg mx-auto">
+        <Card className="w-full max-w-lg mx-auto border border-primary bg-background">
             <CardHeader>
-                <CardTitle className="font-bold">Contact:</CardTitle>
-                <CardDescription>
-                    I Would be Happy to Hear From You!
-                </CardDescription>
+                <CardTitle className="font-bold text-2xl">Contact:</CardTitle>
             </CardHeader>
             <CardContent>
                 <form id="contact-form" onSubmit={form.handleSubmit(onSubmit)}>

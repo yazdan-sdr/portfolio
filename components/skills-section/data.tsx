@@ -1,52 +1,52 @@
 export const skills = [
     {
         id: "1",
-        name: "html",
+        name: "HTML",
         icon: "/images/skills-svg/html.svg",
     },
     {
         id: "2",
-        name: "css",
+        name: "CSS",
         icon: "/images/skills-svg/css.svg",
     },
     {
         id: "3",
-        name: "javascript",
+        name: "JavaScript",
         icon: "/images/skills-svg/javascript.svg",
     },
     {
         id: "4",
-        name: "typescript",
+        name: "TypeScript",
         icon: "/images/skills-svg/typescript.svg",
     },
     {
         id: "5",
-        name: "reactjs",
+        name: "ReactJS",
         icon: "/images/skills-svg/reactjs.svg",
     },
     {
         id: "6",
-        name: "nextjs",
+        name: "NextJS",
         icon: "/images/skills-svg/nextjs.svg",
     },
     {
         id: "7",
-        name: "tailwindcss",
+        name: "TailwindCSS",
         icon: "/images/skills-svg/tailwindcss.svg",
     },
     {
         id: "8",
-        name: "bootstrap",
+        name: "Bootstrap",
         icon: "/images/skills-svg/bootstrap.svg",
     },
     {
         id: "9",
-        name: "git",
+        name: "Git",
         icon: "/images/skills-svg/git.svg",
     },
     {
         id: "10",
-        name: "vscode",
+        name: "VSCode",
         icon: "/images/skills-svg/vscode.svg",
     },
 ];

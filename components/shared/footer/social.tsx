@@ -37,7 +37,7 @@ const social = () => {
                 const Icon = social.icon;
                 return (
                     <span
-                        className="social mx-2.5 text-muted-foreground hover:text-accent-light"
+                        className="social mx-2.5 text-primary hover:text-accent"
                         key={social.id}>
                         <a rel="noopener noreferrer" href={social.address}>
                             <Icon size="50"></Icon>

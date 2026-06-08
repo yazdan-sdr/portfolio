@@ -1,6 +1,7 @@
 "use client";
 import ModeToggler from "./mode-toggler";
 import { Ghost, SquareX } from "lucide-react";
+import Logo, { LogoName } from "./logo";
 import {
     Sheet,
     SheetClose,
@@ -30,9 +31,9 @@ const MobileMenu = () => {
         <div className="flex lg:hidden">
             <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger asChild>
-                    <Button className="bg-accent-light font-bold">
-                        <Menu />
-                    </Button>
+                    <div className="size-11 p-1 hover:cursor-pointer">
+                        <Menu className="text-4xl font-bold size-8 text-primary" />
+                    </div>
                 </SheetTrigger>
                 <SheetContent
                     side="top"
@@ -40,16 +41,20 @@ const MobileMenu = () => {
                     <div className="flex justify-center items-center">
                         <div className="flex mt-10 justify-between items-center gap-30">
                             <SheetHeader>
-                                <SheetTitle className="text-2xl w-30 text-muted-foreground">
-                                    LOGHO
+                                <SheetTitle className="text-2xl w-30 flex justify-center items-center">
+                                    <Logo />
                                 </SheetTitle>
                             </SheetHeader>
                             <div className="flex justify-center items-center gap-5">
-                                <ModeToggler />
+                                <div className="mb-3.5 rounded-xl flex justify-center items-center size-12">
+                                    <ModeToggler />
+                                </div>
                                 <SheetClose>
-                                    <SquareX
-                                        className="text-muted-foreground"
-                                        size={35}></SquareX>
+                                    <div className="rounded-xl flex justify-center items-center size-12">
+                                        <SquareX
+                                            className="text-primary"
+                                            size={35}></SquareX>
+                                    </div>
                                 </SheetClose>
                             </div>
                         </div>
@@ -60,7 +65,7 @@ const MobileMenu = () => {
                                 <Button
                                     asChild
                                     key={navbutton.id}
-                                    className="bg-card text-muted-foreground p-5 text-xl">
+                                    className="p-5 text-xl">
                                     <Link className="" href={navbutton.address}>
                                         {navbutton.name}
                                     </Link>
