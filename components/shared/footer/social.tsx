@@ -1,3 +1,4 @@
+"use client";
 import { Github } from "@/components/icons";
 import { Telegram } from "@/components/icons";
 import { Gmail } from "@/components/icons";
